@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>search box</title>
+      <link rel="stylesheet" type="text/css" href="/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awsome/4.7.0/css/font-awsome.min.css">
+</head>
+<body>
+      <div class="main">
+        <<input type="text" name="box" placeholder="Search Anything You want....">
+        <button class="search-btn" type="button">Search</button>
+        <div class="btn">
+          <a href="#"><i class="fa fa-search"></i></a>
+<script>
+ document.getElementById('search-btn').onclick=()=>{
+
+          const url ="http://localhost:4000/mlist"
+          fetch(url)
+          .then(res=>res.json())
+          .then(res2 => console.log(res2));
+        }
+          </script>
+</body>
+</html>
